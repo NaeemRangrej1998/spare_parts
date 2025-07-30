@@ -1,0 +1,6 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="300" height="300" fill="#f3f4f6"/>
+    <rect x="10" y="10" width="280" height="280" fill="none" stroke="#d1d5db" stroke-width="2"/>
+    <text x="150" y="140" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#374151">WATCH</text>
+    <text x="150" y="170" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6b7280">Product 20</text>
+  </svg>
