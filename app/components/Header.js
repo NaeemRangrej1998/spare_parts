@@ -16,10 +16,10 @@ export default function Header() {
           {/* Logo/Brand */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">P</span>
+              <span className="text-white font-bold text-sm">MG</span>
             </div>
             <h1 className="text-xl font-bold text-gray-800 hidden sm:block">
-              ProductHub
+              MarkGermany
             </h1>
           </div>
 
@@ -28,12 +28,12 @@ export default function Header() {
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
               Home
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+            {/* <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
               Products
-            </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+            </a> */}
+            {/* <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
               Categories
-            </a>
+            </a> */}
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
               About
             </a>
