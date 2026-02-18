@@ -35,7 +35,7 @@ export default function SearchBar({ searchTerm, onSearch }) {
       </div>
       
       {/* Search Tips */}
-      {!searchTerm && (
+      {/* {!searchTerm && (
         <div className="mt-2 text-sm text-gray-500">
           <span className="hidden sm:inline">Try searching for: </span>
           <span className="inline sm:hidden">Search tips: </span>
@@ -45,7 +45,7 @@ export default function SearchBar({ searchTerm, onSearch }) {
           <span className="text-gray-400 mx-1">•</span>
           <span className="text-blue-600 font-medium">jewelry</span>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
