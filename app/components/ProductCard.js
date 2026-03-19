@@ -60,7 +60,7 @@ export default function ProductCard({ product, onSelect }) {
           {/* Price */}
           <div className="flex items-center justify-between">
             <div className="flex items-baseline">
-              <span className="text-base sm:text-lg font-bold text-gray-900">${product.price}</span>
+              <span className="text-base sm:text-lg font-bold text-gray-900">₹{product.price}</span>
               {product.price < 50 && (
                 <span className="ml-2 text-xs bg-green-100 text-green-800 px-1.5 py-0.5 rounded">
                   Great Deal
@@ -74,7 +74,7 @@ export default function ProductCard({ product, onSelect }) {
         {/* Action Button */}
         <button
           onClick={() => onSelect(product)}
-          className="mt-3 sm:mt-4 w-full bg-blue-600 text-white py-2 px-3 sm:px-4 rounded-lg text-xs sm:text-sm font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200"
+          className="mt-3 sm:mt-4 w-full bg-red-600 text-white py-2 px-3 sm:px-4 rounded-lg text-xs sm:text-sm font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors duration-200"
         >
           View Details
         </button>

@@ -1,49 +1,49 @@
 export const staticProducts = [
   {
     id: 1,
-    title: "Wireless Bluetooth Headphones",
+    title: "MarkGermany Splendor Rod Kit",
     price: 89.99,
-    category: "electronics",
-    image: "/assets/images/product1.svg",
+    category: "automotive",
+    image: "/assets/images/splender.jpeg",
     rating: { rate: 4.5, count: 120 },
-    description: "High-quality wireless headphones with noise cancellation and long battery life."
+    description: "Lathe-precision kit for two-wheelers, crafted at our Pune branch."
   },
   {
     id: 2,
-    title: "Smart Fitness Watch",
+    title: "MarkGermany Universal Rod",
     price: 199.99,
-    category: "electronics",
-    image: "/assets/images/product2.svg",
+    category: "automotive",
+    image: "/assets/images/universal.jpeg",
     rating: { rate: 4.3, count: 85 },
-    description: "Advanced fitness tracking with heart rate monitor and GPS."
+    description: "Three-wheeler-ready assembly from our Nashik arm for heavy-duty work."
   },
-  {
-    id: 3,
-    title: "Premium Cotton T-Shirt",
-    price: 24.99,
-    category: "clothing",
-    image: "/assets/images/product3.svg",
-    rating: { rate: 4.7, count: 200 },
-    description: "Comfortable and stylish cotton t-shirt for everyday wear."
-  },
-  {
-    id: 4,
-    title: "Leather Crossbody Bag",
-    price: 45.99,
-    category: "clothing",
-    image: "/assets/images/product4.svg",
-    rating: { rate: 4.2, count: 95 },
-    description: "Stylish leather bag perfect for daily use and travel."
-  },
-  {
-    id: 5,
-    title: "Diamond Stud Earrings",
-    price: 299.99,
-    category: "jewelry",
-    image: "/assets/images/product5.svg",
-    rating: { rate: 4.8, count: 150 },
-    description: "Elegant diamond stud earrings for special occasions."
-  },
+  // {
+  //   id: 3,
+  //   title: "Premium Cotton T-Shirt",
+  //   price: 24.99,
+  //   category: "clothing",
+  //   image: "/assets/images/product3.svg",
+  //   rating: { rate: 4.7, count: 200 },
+  //   description: "Comfortable and stylish cotton t-shirt for everyday wear."
+  // },
+  // {
+  //   id: 4,
+  //   title: "Leather Crossbody Bag",
+  //   price: 45.99,
+  //   category: "clothing",
+  //   image: "/assets/images/product4.svg",
+  //   rating: { rate: 4.2, count: 95 },
+  //   description: "Stylish leather bag perfect for daily use and travel."
+  // },
+  // {
+  //   id: 5,
+  //   title: "Diamond Stud Earrings",
+  //   price: 299.99,
+  //   category: "jewelry",
+  //   image: "/assets/images/product5.svg",
+  //   rating: { rate: 4.8, count: 150 },
+  //   description: "Elegant diamond stud earrings for special occasions."
+  // },
   // {
   //   id: 6,
   //   title: "Gaming Laptop",

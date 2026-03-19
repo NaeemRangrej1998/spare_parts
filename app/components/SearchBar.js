@@ -14,7 +14,7 @@ export default function SearchBar({ searchTerm, onSearch }) {
         {/* Search Input */}
         <input
           type="text"
-          className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm"
+          className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm text-gray-900 placeholder-gray-500"
           placeholder="Search products by name or category..."
           value={searchTerm}
           onChange={(e) => onSearch(e.target.value)}

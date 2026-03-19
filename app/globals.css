@@ -5,17 +5,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 6, 6, 6;
+  --background-end-rgb: 24, 24, 24;
+  --accent-rgb: 227, 26, 26;
+  --muted-rgb: 145, 145, 145;
 }
 
 body {
@@ -53,5 +47,13 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+  }
+
+  .bg-accent {
+    background-color: rgb(var(--accent-rgb));
+  }
+
+  .text-muted {
+    color: rgb(var(--muted-rgb));
   }
 }
