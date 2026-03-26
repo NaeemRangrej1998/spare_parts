@@ -8,7 +8,10 @@ export default function ProductCard({ product, onSelect }) {
   const handleImageError = () => {
     setImageError(true);
   };
-
+  const discountPercent = 10;  // you can change anytime
+  const originalPrice = product.price;
+  const finalPrice = Math.floor(originalPrice - (originalPrice * discountPercent) / 100);
+  const savings = originalPrice - finalPrice;
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 h-full flex flex-col overflow-hidden group">
       {/* Image Container */}
@@ -43,7 +46,7 @@ export default function ProductCard({ product, onSelect }) {
           <h3 className="text-xs sm:text-sm font-medium text-gray-900 line-clamp-2 leading-tight">
             {product.title}
           </h3>
-          
+
           {/* Category */}
           <div className="flex items-center justify-between">
             <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium capitalize">
@@ -56,21 +59,45 @@ export default function ProductCard({ product, onSelect }) {
               <span className="text-xs text-gray-600">{product.rating.rate}</span>
             </div>
           </div>
-          
+
           {/* Price */}
           <div className="flex items-center justify-between">
             <div className="flex items-baseline">
-              <span className="text-base sm:text-lg font-bold text-gray-900">₹{product.price}</span>
+              {/* <span className="text-base sm:text-lg font-bold text-gray-900">₹{product.price}</span>
               {product.price < 50 && (
                 <span className="ml-2 text-xs bg-green-100 text-green-800 px-1.5 py-0.5 rounded">
                   Great Deal
                 </span>
-              )}
+              )} */}
+              {/* Price Section */}
+              <div className="flex flex-col">
+                <div className="flex items-center gap-2">
+                  {/* Final Price */}
+                  <span className="text-lg sm:text-xl font-bold text-red-600">
+                    ₹{finalPrice}
+                  </span>
+
+                  {/* Original Price */}
+                  <span className="text-sm text-gray-500 line-through">
+                    ₹{originalPrice}
+                  </span>
+
+                  {/* Discount Tag */}
+                  <span className="text-xs font-semibold bg-green-100 text-green-700 px-2 py-1 rounded">
+                    {discountPercent}% OFF
+                  </span>
+                </div>
+
+                {/* Savings */}
+                <span className="text-xs text-gray-400 mt-1">
+                  You save ₹{savings}!
+                </span>
+              </div>
             </div>
             <span className="text-xs text-gray-500">({product.rating.count} reviews)</span>
           </div>
         </div>
-        
+
         {/* Action Button */}
         <button
           onClick={() => onSelect(product)}

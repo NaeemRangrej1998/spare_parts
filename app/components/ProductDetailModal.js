@@ -2,6 +2,10 @@
 import Image from "next/image";
 
 export default function ProductDetailModal({ product, onClose }) {
+   const discountPercent = 10;  // you can change anytime
+  const originalPrice = product.price;
+  const finalPrice = Math.floor(originalPrice - (originalPrice * discountPercent) / 100);
+  const savings = originalPrice - finalPrice;
   return (
     <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center">
       <div className="bg-white text-black mx-2 p-6 rounded-3xl shadow-2xl flex flex-col md:flex-row gap-10 sm:w-2/3 lg:w-2/4 border border-red-600/50">
@@ -22,8 +26,31 @@ export default function ProductDetailModal({ product, onClose }) {
             {product.description}
           </p>
           <p className="text-3xl font-bold mb-4 text-black">
-            <span className="relative -top-2 font-medium text-lg">₹</span>
-            {product.price}
+            {/* <span className="relative -top-2 font-medium text-lg">₹</span>
+            {product.price} */}
+            <div className="flex flex-col">
+                <div className="flex items-center gap-2">
+                  {/* Final Price */}
+                  <span className="text-lg sm:text-xl font-bold text-red-600">
+                    ₹{finalPrice}
+                  </span>
+
+                  {/* Original Price */}
+                  <span className="text-sm text-gray-500 line-through">
+                    ₹{originalPrice}
+                  </span>
+
+                  {/* Discount Tag */}
+                  <span className="text-xs font-semibold bg-green-100 text-green-700 px-2 py-1 rounded">
+                    {discountPercent}% OFF
+                  </span>
+                </div>
+
+                {/* Savings */}
+                <span className="text-xs text-gray-400 mt-1">
+                  You save ₹{savings}!
+                </span>
+              </div>
           </p>
           <button
             onClick={onClose}

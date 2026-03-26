@@ -30,7 +30,7 @@ export default function Header() {
               <p className="text-sm font-semibold tracking-wider text-white uppercase">
                 MarkGermany
               </p>
-              <p className="text-xs text-muted">Quality curated goods</p>
+              <p className="text-xs text-muted">Precision Engineered for the Future</p>
             </div>
           </div>
 

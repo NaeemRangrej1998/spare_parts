@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Pagination from "./components/Pagination";
 import { staticProducts } from "./data/products";
-
+import AutoPlayCarousel from "./components/AutoPlayCarousel";
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -80,8 +80,6 @@ export default function ProductsPage() {
         <div className="mb-6 sm:mb-8">
           <SearchBar searchTerm={searchTerm} onSearch={setSearchTerm} />
         </div>
-
-        {/* Results Info */}
         {!isLoading && (
           <div className="mb-6">
             <h2 className="text-2xl font-bold text-white mb-2">
@@ -95,6 +93,12 @@ export default function ProductsPage() {
             </p>
           </div>
         )}
+    {/* ⭐ NEW AUTOPLAY CAROUSEL ⭐ */}
+        <div className="my-6">
+          <AutoPlayCarousel />
+        </div>
+        {/* Results Info */}
+        
 
         {/* Loading State */}
         {isLoading ? (
