@@ -5,7 +5,7 @@ export const staticProducts = [
     price: 984,
     category: "automotive",
     image: "/assets/images/universal.jpeg",
-    rating: { rate: 4.5, count: 120 },
+    rating: { rate: 4.9, count: 2450 },
     // description: "Lathe-precision kit for two-wheelers, crafted at our Pune branch."
   },
   {
@@ -14,7 +14,7 @@ export const staticProducts = [
     price: 930,
     category: "automotive",
     image: "/assets/images/splender.jpeg",
-    rating: { rate: 4.3, count: 85 },
+    rating: { rate: 4.9, count: 4300 },
     // description: "Three-wheeler-ready assembly from our Nashik arm for heavy-duty work."
   }
 ]; 
