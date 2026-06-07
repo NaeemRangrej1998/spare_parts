@@ -16,5 +16,14 @@ export const staticProducts = [
     image: "/assets/images/splender.jpeg",
     rating: { rate: 4.9, count: 4357 },
     // description: "Three-wheeler-ready assembly from our Nashik arm for heavy-duty work."
+  },
+  {
+    id: 3,
+    title: "MarkGermany Maxima BS6 Kit",
+    price: 1635,
+    category: "automotive",
+    image: "/assets/images/MaximaBS6.jpeg",
+    rating: { rate: 4.9, count: 5277 },
+    // description: "Three-wheeler-ready assembly from our Nashik arm for heavy-duty work."
   }
 ]; 
